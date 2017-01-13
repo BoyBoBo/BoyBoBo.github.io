@@ -4,9 +4,10 @@ var container = document.getElementById('container');
 var LEN = 5;
 
 var endTime, startTime;
-
+var expect = 1;
 generateBtn.addEventListener('click', function(){
 	startTime = 0, endTime = 0;
+	expect = 1;
 	container.innerHTML = '';
 	var arr = [];
 	for(var i = 0; i < LEN * LEN; i ++) {
@@ -31,7 +32,7 @@ generateBtn.addEventListener('click', function(){
 	}
 });
 
-var expect = 1;
+
 
 container.addEventListener('click', function(e){
 	var target = e.target;
