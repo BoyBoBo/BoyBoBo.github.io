@@ -34,7 +34,7 @@ generateBtn.addEventListener('click', function(){
 
 
 
-container.addEventListener('click', function(e){
+container.addEventListener('keydown', function(e){
 	var target = e.target;
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
@@ -50,5 +50,12 @@ container.addEventListener('click', function(e){
 				expect ++;
 			}
 		}
+	}
+});
+
+container.addEventListener('keyup', function(e){
+	var target = e.target;
+	if(target.constructor === HTMLLIElement){
+		target.style.backgroundColor = '#ccc';
 	}
 });
