@@ -21,7 +21,7 @@ generateBtn.addEventListener('click', function(){
 		console.log(num);
 		randomArr.push(num);
 	} while(arr.length > 0);
-		
+	alert("test1");	
         for(var i = 0; i < LEN; i ++) {
 		var ulEle = document.createElement('ul');
 		
@@ -34,6 +34,7 @@ generateBtn.addEventListener('click', function(){
 		container.appendChild(ulEle);
 		
 	} 
+	alert("test2");
 });
 
 
