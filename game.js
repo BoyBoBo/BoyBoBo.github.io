@@ -21,8 +21,7 @@ generateBtn.addEventListener('click', function(){
 		randomArr.push(num);
 	} while(arr.length > 0);
 		
-        var liArr = [];
-	for(var i = 0; i < LEN; i ++) {
+        for(var i = 0; i < LEN; i ++) {
 		var ulEle = document.createElement('ul');
 		
 		for(var j = 0; j < LEN; j ++) {
@@ -30,16 +29,10 @@ generateBtn.addEventListener('click', function(){
 			ele.innerText = randomArr[i * LEN + j];
 			ele.style.height = ele.style.width;
 			ulEle.appendChild(ele);
-			liArr.push(ele);
 		}
 		container.appendChild(ulEle);
 		
-	}
-	for(var i = 0; i < liArr.length; i++){
-	    var ele = liArr[i];
-	    ele.style.height = ele.style.lineHeight = ele.clientWidth;
-	    
-	}
+	} 
 });
 
 
