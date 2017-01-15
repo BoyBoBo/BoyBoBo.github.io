@@ -6,7 +6,9 @@ var LEN = 5;
 var endTime, startTime;
 var expect = 1;
 var _active;
+alert("test1");
 generateBtn.addEventListener('click', function(){
+	alert("test2");	
 	startTime = 0, endTime = 0;
 	expect = 1;
 	container.innerHTML = '';
@@ -21,7 +23,7 @@ generateBtn.addEventListener('click', function(){
 		console.log(num);
 		randomArr.push(num);
 	} while(arr.length > 0);
-	alert("test1");	
+	
         for(var i = 0; i < LEN; i ++) {
 		var ulEle = document.createElement('ul');
 		
@@ -34,7 +36,6 @@ generateBtn.addEventListener('click', function(){
 		container.appendChild(ulEle);
 		
 	} 
-	alert("test2");
 });
 
 
