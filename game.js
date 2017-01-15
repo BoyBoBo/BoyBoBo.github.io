@@ -38,7 +38,7 @@ generateBtn.addEventListener('click', function(){
 });
 
 
-container.addEventListener('click', function(e){
+container.addEventListener('touchstart', function(e){
 	var target = e.target;
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
