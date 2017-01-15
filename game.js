@@ -4,7 +4,7 @@ var container = document.getElementById('container');
 var LEN = 5;
 
 var endTime, startTime;
-var expect = 1;
+var expect = 1;var _active;
 generateBtn.addEventListener('click', function(){
 	startTime = 0, endTime = 0;
 	expect = 1;
@@ -36,12 +36,13 @@ generateBtn.addEventListener('click', function(){
 });
 
 
-
 container.addEventListener('click', function(e){
 	var target = e.target;
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
 		if(num === expect) {
+			_active && _active.style.backgroundColor = "#ccc";
+			_active = target;
 			target.style.backgroundColor = 'green';
 			if(expect === LEN * LEN){
 				endTime = new Date().getTime();
