@@ -4,7 +4,8 @@ var container = document.getElementById('container');
 var LEN = 5;
 
 var endTime, startTime;
-var expect = 1;var _active;
+var expect = 1;
+var _active;
 generateBtn.addEventListener('click', function(){
 	startTime = 0, endTime = 0;
 	expect = 1;
@@ -54,12 +55,5 @@ container.addEventListener('click', function(e){
 				expect ++;
 			}
 		}
-	}
-});
-
-container.addEventListener('mouseup', function(e){
-	var target = e.target;
-	if(target.constructor === HTMLLIElement){
-		target.style.backgroundColor = '#ccc';
 	}
 });
