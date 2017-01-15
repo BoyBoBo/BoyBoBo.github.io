@@ -37,7 +37,8 @@ generateBtn.addEventListener('click', function(){
 	}
 	for(var i = 0; i < liArr.length; i++){
 	    var ele = liArr[i];
-	    ele.style.height = ele.clientWidth;
+	    ele.style.height = ele.parentNode.clientWidth;
+	    ele.style.lineHeight = ele.parentNode.clientWidth;
 	}
 });
 
