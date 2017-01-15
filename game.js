@@ -6,9 +6,8 @@ var LEN = 5;
 var endTime, startTime;
 var expect = 1;
 var _active;
-alert("test1");
 generateBtn.addEventListener('click', function(){
-	alert("test2");	
+
 	startTime = 0, endTime = 0;
 	expect = 1;
 	container.innerHTML = '';
