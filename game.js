@@ -44,7 +44,9 @@ container.addEventListener('click', function(e){
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
 		if(num === expect) {
-			_active && _active.style.backgroundColor = "#ccc";
+			if(_active){
+			    _active.style.backgroundColor = "#ccc";			
+                        }
 			_active = target;
 			target.style.backgroundColor = 'green';
 			if(expect === LEN * LEN){
