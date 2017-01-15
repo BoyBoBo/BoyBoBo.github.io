@@ -26,6 +26,7 @@ generateBtn.addEventListener('click', function(){
 		for(var j = 0; j < LEN; j ++) {
 			var ele = document.createElement('li');
 			ele.innerText = randomArr[i * LEN + j];
+			ele.style.height = ele.clientWidth;
 			ulEle.appendChild(ele);
 		}
 		container.appendChild(ulEle);
