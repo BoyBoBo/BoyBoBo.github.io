@@ -37,7 +37,7 @@ generateBtn.addEventListener('click', function(){
 
 
 
-container.addEventListener('mousedown', function(e){
+container.addEventListener('click', function(e){
 	var target = e.target;
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
