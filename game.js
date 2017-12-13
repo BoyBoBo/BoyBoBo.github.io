@@ -37,8 +37,7 @@ generateBtn.addEventListener('click', function(){
 	} 
 });
 
-
-container.addEventListener('touchstart', function(e){
+var gridClick = function(e){
 	var target = e.target;
 	if(target.constructor === HTMLLIElement){
 		var num = Number(target.innerText);
@@ -59,4 +58,6 @@ container.addEventListener('touchstart', function(e){
 			}
 		}
 	}
-});
+};
+container.addEventListener('mousedown', gridClick);
+container.addEventListener('touchstart', gridClick);
